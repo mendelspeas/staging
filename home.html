@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0;
+            background-color: #FFF8F0;
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-columns: 1fr 3.214fr 2.618fr 1.618fr 1fr 1.618fr 2.618fr 3.214fr 1fr;
+            max-width: 1080px; /* For now only design for desktop */
+            grid-auto-rows: minmax(100px, auto); /* Fow now set a height to visualize */
+
+        }
+        header, footer {
+            border: 3px dotted blue;
+            grid-column: 1 / -1; /* span all columns */
+        }
+        main {
+            border: 3px dotted blue;
+        }
+        .hero {
+            grid-column: 1 / -1; /* span all columns */
+        }
+        img {
+            display: block; /* overwrite the default inline setting to avoid gap at bottom */
+            width: 100%;
+/*            height: auto;*/
+        }
+        .ll {
+            grid-column: 2 / 6;
+        }
+        .rs {
+            grid-column: 7 / 9;
+        }
+        b {
+            border: 3px dotted blue;
+            grid-column: 1 / -1;
+            height: 110px;
+        }
+
+    </style>
+</head>
+<body>
+    <header></header>
+    <main class="hero">
+        <img src="https://cdn.shopify.com/s/files/1/0516/9423/9915/files/homepage_dark_parchment_16x9_22647d4d-4ad5-49ff-a0f0-09d03baef246.jpg">
+    </main>
+    <b></b>
+    <main class="ll">
+        <img src="https://mendels.io/cdn/shop/files/kit_two_sides_azure_square_margins_changelogo_540x.jpg">
+    </main>
+    <main class="rs">
+        <h2>STEP 1</h2>
+        <h1>Test your DNA</h1>
+        <h3>Did you know your DNA determines how well your body absorbs, processes, and metabolizes vitamins? We test your DNA for known gene variants and give you a DNA score to show how your body fares compared to the average population.</h3>
+        <p>Your personalized nutrition journey starts with DNA. Submit your DNA sample by collecting a drop of saliva with our easy-to-use DNA kit.</p>
+        <h4>Explore the science →</h4>
+    </main>
+    <footer></footer>
+</body>
+</html>
