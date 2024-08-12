@@ -47,7 +47,7 @@
             padding: 0;
             list-style-type: none;
         }
-        li {
+        menuitem {
             font-weight: 600;
             font-style: normal;
             line-height: 1;
@@ -55,11 +55,7 @@
 /*            text-wrap: nowrap;*/
             margin: auto 0px auto 8px; /* centers horizontally and vertically within the cell */
         }
-        li a {
-            /* Remove default hyperlink style. */
-            text-decoration: none;
-            color: inherit;
-        }
+
 
         main {
             display: grid;
@@ -103,7 +99,7 @@
             font-style: normal;
             font-size: 30px;
         }
-        h2, h3, p, button, input, li {
+        h2, h3, p, button, input, menuitem {
             font-family: "Open Sans", sans-serif; /* All except H1 should be sans-serif. */
         }
         h3 {
@@ -197,11 +193,11 @@
     <header>
         <img src="https://mendels.io/cdn/shop/files/Azure4-6_with_tagline-rgb_08e7b4f7-edfc-4963-8789-fe3ae2e33503_180x.png">
         <menu>
-            <li>Why DNA?</li>
-            <li>DNA Privacy</li>
-            <li>Quality</li>
-            <li><a href="plan.html">Get the Plan</a></li>
-            <li>Get Tested</li>
+            <menuitem>Why DNA?</menuitem>
+            <menuitem>DNA Privacy</menuitem>
+            <menuitem>Quality</menuitem>
+            <menuitem>Get the Plan</menuitem>
+            <menuitem>Get Tested</menuitem>
         </menu>
     </header>
 
@@ -209,50 +205,45 @@
 
 
     <main>
-        <section class="hero1">
-            <img src="https://cdn.shopify.com/s/files/1/0516/9423/9915/files/homepage_dark_parchment_16x9_22647d4d-4ad5-49ff-a0f0-09d03baef246.jpg">
-        </section>
-        <b class="gap1"></b>
-        <section class="ll">
-            <img src="https://mendels.io/cdn/shop/files/kit_two_sides_azure_square_margins_changelogo_540x.jpg">
-        </section>
-        <section class="rs">
-            <h2>STEP 1</h2>
-            <h1>Test your DNA</h1>
-            <h3>Did you know your DNA determines how well your body absorbs, processes, and metabolizes vitamins? We test your DNA for known gene variants and give you a DNA score to show how your body fares compared to the average population.</h3>
-            <p>Your personalized nutrition journey starts with DNA. Submit your DNA sample by collecting a drop of saliva with our easy-to-use DNA kit.</p>
-            <h3>Explore the science →</h3>
-        </section>
-        <b class="gap1"></b>
-        <section class="ls">
-            <h2>STEP 2</h2>
-            <h1>Test your lifestyle</h1>
-            <h3>Your nutrition is defined by genetics and lifestyle. Test your lifestyle by answering a few questions about your day-to-day habits.</h3>
-            <p>The lifestyle test, built by our staff of expert nutritional scientists, assesses how well you are meeting nutritional requirements set by the National Academy of Medicine. It gives you a lifestyle score for each essential nutrient, considering all scientific risk factors, such as diet, exercise, drug interactions, pregnancy, etc.</p>
-            <h3>How it works →</h3>
-        </section>
-        <section class="rl">
-            <img src="https://mendels.io/cdn/shop/files/lifestyle_test_crop_changelogo_540x.jpg">
-        </section>
-        <b class="gap1"></b>
         <section class="lp">
             <img src="https://mendels.io/cdn/shop/files/box_zoom_no_edge_2_changelogo_540x.png">
         </section>
         <section class="rs">
-            <h2>STEP 3</h2>
-            <h1>Get personalized vitamins</h1>
-            <h3>Close any gaps in your nutrition with supplements made just for you.</h3>
-            <p>For each essential nutrient, you get a scientific score based on the DNA test and the lifestyle test. Did you get straight A's? Congrats. If there are any shortcomings, we are here to help! We formulate convenient vitamin daily packs based on the scientific test results, making sure you take exactly what your body needs, and at exactly the right amount.</p>
-            <h3>Get started →</h3>
-        </section>
-        <section class="hero2">
-            <b></b>
-            <container>
-                <h1>Test yourself now and get the right nutrition for your body.</h1>
-                <br>
-                <button type="button">GET STARTED</button>
-            </container>
-            <b></b>
+            <h1>Personalized Vitamins</h1>
+            <h3>$66.61 per month</h3>
+            <p>Get completely personalized vitamins and minerals, based on your DNA test results and lifestyle.</p>
+            <p>Free DNA Test</p>
+            <p>Free Lifestyle Test</p>
+            <p>Nutrition analysis & score</p>
+            <p>Personalized vitamins in convenient daily packs</p>
+            <p>Subscription box delivered to your door each month</p>
+            <p>Cancel anytime after first 3 months</p>
+            <h3>Subscribe at $199.83 for first 3 months, then $66.61 per month thereafter.</h3>
+            <br>
+
+            <!-- THIS IS THE PAYPAL SUBSCRIPTION BUTTON -->
+            <script src="https://www.paypal.com/sdk/js?client-id=AeAh9XtHGzBNlSj34jviffPrg23B_eqQcpOgpxkUX_zDPp1rUzZshO8rbDDrFMeIfWIETCJ_DhrkWQB2&vault=true&intent=subscription"></script>
+            <div id="paypal-button-container"></div>
+            <script>
+              paypal.Buttons({
+                  style: {
+                      shape: 'rect',
+                      color: 'blue',
+                      layout: 'vertical',
+                      label: 'subscribe'
+                  },
+                  createSubscription: function(data, actions) {
+                    return actions.subscription.create({
+                      /* Creates the subscription */
+                      plan_id: 'P-2J640482GS4033143MZPJNRY'
+                    });
+                  },
+                  onApprove: function(data, actions) {
+                    alert('You have successfully subscribed to ' + data.subscriptionID + '. We will email you information about the next steps.'); // You can add optional success message for the subscriber here
+                  }
+              }).render('#paypal-button-container'); // Renders the PayPal button
+            </script>
+
         </section>
     </main>
     
