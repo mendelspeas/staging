@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv='expires' content='0'>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+
+    <style>
+
+         
+        body {
+            margin: 0px;
+            background-color: #FFF8F0;
+            color: #474747;  
+            max-width: 1080px;  
+            margin: auto;  
+        }
+        h1 {
+            font-family: "Cormorant Garamond", serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 30px;
+        }
+        h2, h3, p, button, input, li, a {
+            font-family: "Open Sans", sans-serif;  
+        }
+        h3 {
+            font-weight: 600;
+            font-style: normal;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+        h2 {
+            font-weight: 300;
+            font-style: normal;
+            font-size: 19px;
+        }
+        p {
+            font-weight: 400;
+            font-style: normal;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        button, .button {
+            font-weight: 500;
+            font-style: normal;
+            font-size: 16px;
+            color: #FFF8F0;
+            background-color: #0362A0;
+            border: none;  
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        input {
+            height: 38px;
+            display: block;
+            max-width: 100%;  
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+         
+        header {
+            display: grid;
+            grid-template-columns: 1fr 3.214fr 2.618fr 1.618fr 1fr 1.618fr 2.618fr 3.214fr 1fr;
+            grid-auto-rows: minmax(100px, auto);
+             
+            background-color: #FFF8F0;
+            position: sticky;
+            top: 0;
+            width: 100%;  
+            max-width: 1080px;  
+        }
+        .logo {
+            grid-column: 2 / 4;
+            align-self: center;
+        }
+        menu {
+            grid-column: 4 / 9;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+             
+            padding: 0;
+            list-style-type: none;
+        }
+        li {
+            font-weight: 600;
+            font-style: normal;
+            line-height: 1;
+            font-size: 15px;
+ 
+            margin: auto 0px auto 8px;  
+        }
+        a {
+             
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+         
+        main {
+            display: grid;
+            grid-template-columns: 1fr 3.214fr 2.618fr 1.618fr 1fr 1.618fr 2.618fr 3.214fr 1fr;
+            grid-auto-rows: minmax(10px, auto);  
+        }
+        .hero1 {
+            grid-column: 1 / -1;  
+            text-align: center;
+        }
+        main img {
+            display: block;  
+            width: 100%;
+        }
+
+        .leftwide {
+            grid-column: 2 / 6;
+        }
+        .rightnarrow {
+            grid-column: 7 / 9;
+        }
+        .leftnarrow {
+            grid-column: 2 / 4;
+        }
+        .rightwide {
+            grid-column: 5 / 9;
+        }
+        .lefttall {
+            grid-column: 2 / 7;
+        }
+        .righttall {
+            grid-column: 4 / 9;
+        }
+        hr {
+            grid-column: 1 / -1;
+            height: 110px;
+            border: 0;  
+        }
+        .hero2 {
+            grid-column: 2 / 9;
+            text-align: center;
+            min-height: 400px;
+            display: grid;
+            grid-template-rows: 3fr 2fr 3fr;
+            align-items: center;
+        }
+
+         
+        h3.footer2, h3.footer3 {
+            line-height: 1;
+        }
+        footer {
+            display: grid;
+            grid-template-columns: 1fr 3.214fr 2.618fr 1.618fr 1fr 1.618fr 2.618fr 3.214fr 1fr;
+            max-width: 1080px;  
+            grid-auto-rows: minmax(10px, auto);  
+            align-items: center;  
+        }
+        .footer1 {
+            grid-column: 2 / 5;
+        }
+        .footer2 {
+            grid-column: 6 / 8;
+        }
+        .footer3 {
+            grid-column: 8 / 10;
+        }
+        .footer4 {
+            grid-column: 2 / 4;
+        }
+        .footer5 {
+            grid-column: 4 / 5;
+        }
+        .footerb {
+            grid-column: 1 / -1;
+            background-color: #35618F;
+            color: #FFF8F0;
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            line-height: 1;
+            margin: 0px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/index.html"><img src="/logo.png"></a>
+        </div>
+        <menu>
+            <li><a href="/dna">Why DNA?</a></li>
+            <li><a href="/privacy">DNA Privacy</a></li>
+            <li><a href="/quality">Quality</a></li>
+            <li><a href="/plan">Get the Plan</a></li>
+            <li><a href="/nutrigenomics-test">Get Tested</a></li>
+        </menu>
+    </header>
+
+    
+    
+<main>
+    <b style="background-color: #EFE0D0;grid-row: 1 / 2; grid-column: 1 / -1;"></b>
+    <section class="hero2" style="grid-row: 1 / 2;grid-template-rows: 1fr 1fr 1fr;">
+        <b></b>
+        <container>
+            <h1>Delivery and returns</h1>
+        </container>
+        <b></b>
+    </section>
+    <hr>
+</main>
+
+
+
+    <footer>
+        <h2 class="footer1">Subscribe to the newsletter</h2>
+        <h2 class="footer2">Orders and support</h2>
+        <h2 class="footer3">About</h2>
+        <input class="footer4" type="email" id="newsemail" required placeholder="Email address">
+        <button class="footer5" type="submit">SUBSCRIBE</button>
+        <h3 class="footer2"><a href="/contact">Contact us</a></h3> <h3 class="footer3"><a href="/about">About us</a></h3>
+        <h3 class="footer2"><a href="/faq">FAQs</a></h3> <h3 class="footer3"><a href="/quality">Quality and sustainability</a></h3>
+        <h3 class="footer2"><a href="/shipping">Delivery and returns</a></h3> <h3 class="footer3"><a href="/privacy">Privacy</a></h3>
+        <h3 class="footer2"><a href="/legal">Terms and conditions</a></h3>
+        <h3 class="footer2"> </h3> 
+        <p class="footerb">
+            &copy Mendel's Peas Wellness Inc.
+        </p>
+    </footer>
+</body>
+</html>
